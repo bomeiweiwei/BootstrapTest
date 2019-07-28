@@ -1,0 +1,54 @@
+﻿@model IEnumerable<BootstrapTest.Models.Products>
+
+@{
+    ViewBag.Title = "Table1";
+}
+
+<table class="table table-hover">
+    <thead class="table-primary">
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.ProductName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.QuantityPerUnit)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.UnitPrice)
+            </th>            
+            <th>
+                @Html.DisplayNameFor(model => model.Categories.CategoryName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Suppliers.CompanyName)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td class="table-active">
+                    @Html.DisplayFor(modelItem => item.ProductName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.QuantityPerUnit)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.UnitPrice)
+                </td>
+                
+                <td>
+                    @Html.DisplayFor(modelItem => item.Categories.CategoryName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Suppliers.CompanyName)
+                </td>
+                <td>
+                    <img src="~/images/book01.png" class="w-25"/>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
