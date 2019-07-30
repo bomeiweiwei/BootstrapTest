@@ -36,6 +36,31 @@ namespace BootstrapTest.Controllers
             return View();
         }
 
+        public ActionResult ListGroup()
+        {
+            return View();
+        }
+
+        public ActionResult ButtonGroup()
+        {
+            return View();
+        }
+
+        public ActionResult NavTest()
+        {
+            return View();
+        }
+
+        public ActionResult NavBarTest()
+        {
+            return View();
+        }
+
+        public ActionResult CardTest()
+        {
+            return View();
+        }
+
         public ActionResult Search(SearchModel search)
         {
             ViewBag.SearchInfo = search.SearchInfo;
