@@ -291,6 +291,10 @@
     <Content Include="Views\Shared\_LayoutCopy.cshtml" />
     <Content Include="Views\Home\NavBarTest.cshtml" />
     <Content Include="Views\Home\CardTest.cshtml" />
+    <Content Include="Views\Home\JSModal.cshtml" />
+    <Content Include="Views\Home\CarouseTest.cshtml" />
+    <Content Include="Views\Home\CollapseTest.cshtml" />
+    <Content Include="Views\Home\CollapseTest2.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

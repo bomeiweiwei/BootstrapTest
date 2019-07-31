@@ -61,6 +61,26 @@ namespace BootstrapTest.Controllers
             return View();
         }
 
+        public ActionResult JSModal()
+        {
+            return View();
+        }
+
+        public ActionResult CarouseTest()
+        {
+            return View();
+        }
+
+        public ActionResult CollapseTest()
+        {
+            return View();
+        }
+
+        public ActionResult CollapseTest2()
+        {
+            return View();
+        }
+
         public ActionResult Search(SearchModel search)
         {
             ViewBag.SearchInfo = search.SearchInfo;
